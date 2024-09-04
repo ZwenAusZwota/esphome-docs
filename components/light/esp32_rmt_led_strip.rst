@@ -26,12 +26,13 @@ Configuration variables
 - **rmt_channel** (**Required**, int): The RMT channel to use. If using multiple strips, you need to use different channels.
 
   .. csv-table::
-      :header: "ESP32 Variant", "Channels"
+      :header: "ESP32 Variant", "TX-Channels"
 
       "ESP32", "0, 1, 2, 3, 4, 5, 6, 7"
       "ESP32-S2", "0, 1, 2, 3"
       "ESP32-S3", "0, 1, 2, 3"
       "ESP32-C3", "0, 1"
+      "ESP32-C6", "0, 1"
 
 - **chipset** (**Required**, enum): The chipset to apply known timings from. Not used if specifying the timings manually, see below.
     - ``WS2812``
